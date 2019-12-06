@@ -25,7 +25,7 @@ var meshEarth = new planet(radius,textureEarth,earthDist);
 meshEarth.mesh.rotation.y = 0;
 
 //Nuvole
-var cloudsEarth = new planet(radiuss,textureClouds,0); //z sfasata di 15 altrimenti da problemi si sivrapposizione e si vede uno sfarfallio delle texture
+var cloudsEarth = new planet(radius,textureClouds,0); //z sfasata di 15 altrimenti da problemi si sivrapposizione e si vede uno sfarfallio delle texture
 cloudsEarth.mesh.scale.set( cloudsScale, cloudsScale, cloudsScale );
 cloudsEarth.material.transparent = true;
 //Moon
