@@ -74,3 +74,23 @@ body,html,canvas{
   bottom: 15%;
   margin: auto;
 }
+
+ul.hub_btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  bottom: 30px;
+  margin: auto;
+}
+
+.btn {
+  display: inline;
+}
+
+li > button {
+  background-color: white;
+  border: none;
+  font-size: 14pt;
+  font-weight: bold;
+  padding: 10px;
+}

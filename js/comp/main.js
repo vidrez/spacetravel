@@ -41,7 +41,7 @@ var camera = new THREE.PerspectiveCamera(40, SCREEN_WIDTH/SCREEN_HEIGHT, 1, 1e8)
 var cameraSpeed = 10000;
 scene.add(camera);
 camera.position.set(meshEarth.mesh.position.x,meshEarth.mesh.position.y,meshEarth.mesh.position.z-15000);
-camera.lookAt(meshSaturn.mesh.position); //posizione iniziale camera
+camera.lookAt(Sunmesh); //posizione iniziale camera
 //
 var controls = new THREE.FlyControls( camera );
 var clock = new THREE.Clock();
