@@ -40,8 +40,8 @@ scene.add(Sunmesh);
 var camera = new THREE.PerspectiveCamera(40, SCREEN_WIDTH/SCREEN_HEIGHT, 1, 1e8);
 var cameraSpeed = 10000;
 scene.add(camera);
-camera.position.set(meshEarth.mesh.position.x,meshEarth.mesh.position.y,meshEarth.mesh.position.z-radius);
-camera.lookAt(meshEarth.mesh.position); //posizione iniziale camera
+camera.position.set(meshEarth.mesh.position.x,meshEarth.mesh.position.y,meshEarth.mesh.position.z - meshEarth.mesh.geometry.parameters.radius*5);
+camera.lookAt(meshNeptune.mesh.position); //posizione iniziale camera
 //
 var controls = new THREE.FlyControls( camera );
 var clock = new THREE.Clock();
@@ -63,3 +63,8 @@ controls.dragToLook = true;
  //saturnOrbit();
  star();
  saturnRing();
+
+ function goTo(planet){
+   camera.position.set(planet.mesh.position.x,planet.mesh.position.y,planet.mesh.position.z - planet.mesh.geometry.parameters.radius*5);
+   camera.lookAt(meshNeptune.mesh.position);
+ }

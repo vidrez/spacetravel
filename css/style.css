@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 body,html,canvas{
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: black;
+  font-family: 'Poppins', sans-serif;
 }
 
 #mousePos{
@@ -85,6 +87,18 @@ ul.hub_btn {
 
 .btn {
   display: inline;
+}
+
+.controls {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 30px;
+  margin: auto;
+  color: white;
+  font-size: 14pt;
+  font-weight: bold;
+  padding: 10px;
 }
 
 li > button {
